@@ -3,3 +3,15 @@
 ################################################################################
 
 /ScaffoldCode.Domain/bin/Debug
+/ScaffoldCode.Domain/obj/Debug
+/packages
+/ScaffoldCode.Infra.CrossCutting.IoC/bin/Debug
+/ScaffoldCode.Infra.CrossCutting.IoC/obj/Debug
+/ScaffoldCode.Infra.Helpers/bin/Debug
+/ScaffoldCode.Infra.Helpers/obj/Debug
+/ScaffoldCode.Infra.Web/bin
+/ScaffoldCode.Infra.Web/obj/Debug
+/ScaffoldCodeInfra.Data.Dapper/bin/Debug
+/ScaffoldCodeInfra.Data.Dapper/obj/Debug
+/WebCodeGeneration/bin
+/.vs/ScaffoldCode/v15/Server/sqlite3
