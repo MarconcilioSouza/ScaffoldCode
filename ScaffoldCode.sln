@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScaffoldCode.Domain", "Scaf
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScaffoldCode.Infra.CrossCutting.IoC", "ScaffoldCode.Infra.CrossCutting.IoC\ScaffoldCode.Infra.CrossCutting.IoC.csproj", "{1E4512BF-7C30-457F-8C7D-EC9795F11A62}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TesteConsole", "TesteConsole\TesteConsole.csproj", "{B7D16B0A-D3EB-4E4C-9C68-A4BD87A201F3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{1E4512BF-7C30-457F-8C7D-EC9795F11A62}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1E4512BF-7C30-457F-8C7D-EC9795F11A62}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1E4512BF-7C30-457F-8C7D-EC9795F11A62}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7D16B0A-D3EB-4E4C-9C68-A4BD87A201F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7D16B0A-D3EB-4E4C-9C68-A4BD87A201F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7D16B0A-D3EB-4E4C-9C68-A4BD87A201F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7D16B0A-D3EB-4E4C-9C68-A4BD87A201F3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -55,6 +61,7 @@ Global
 		{13E411B1-21AC-420C-AEC3-628C4B44BBFA} = {CF02BDD4-8A97-4987-A46A-F6F9ED42DCAF}
 		{990AE947-E648-4F87-A842-28D17B847F47} = {952914C2-B3D6-4DDC-8CB8-B65189544031}
 		{1E4512BF-7C30-457F-8C7D-EC9795F11A62} = {5248FCCB-426F-4F4A-A864-796E4E8D20AA}
+		{B7D16B0A-D3EB-4E4C-9C68-A4BD87A201F3} = {CF02BDD4-8A97-4987-A46A-F6F9ED42DCAF}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {169C388D-8553-4AC6-88FF-D8ED7D54313E}

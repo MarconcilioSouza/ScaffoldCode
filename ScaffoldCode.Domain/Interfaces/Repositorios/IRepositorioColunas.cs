@@ -5,6 +5,6 @@ namespace ScaffoldCode.Domain.Interfaces.Repositorios
 {
     public interface IRepositorioColunas
     {
-        List<Colunas> ObterColunas(int idObjeto, int? idPKey);
+        List<columns> ObterColunas(int idObjeto, int? idPKey);
     }
 }

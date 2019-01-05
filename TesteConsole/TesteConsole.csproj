@@ -4,16 +4,17 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{990AE947-E648-4F87-A842-28D17B847F47}</ProjectGuid>
-    <OutputType>Library</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ScaffoldCode.Domain</RootNamespace>
-    <AssemblyName>ScaffoldCode.Domain</AssemblyName>
+    <ProjectGuid>{B7D16B0A-D3EB-4E4C-9C68-A4BD87A201F3}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>TesteConsole</RootNamespace>
+    <AssemblyName>TesteConsole</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -23,6 +24,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -41,23 +43,28 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Entidades\CacheSistema.cs" />
-    <Compile Include="Entidades\columns.cs" />
-    <Compile Include="Entidades\index_columns.cs" />
-    <Compile Include="Entidades\key_constraints.cs" />
-    <Compile Include="Entidades\objects.cs" />
-    <Compile Include="Entidades\parameters.cs" />
-    <Compile Include="Entidades\types.cs" />
-    <Compile Include="Interfaces\Repositorios\IRepositorioBase.cs" />
-    <Compile Include="Interfaces\Repositorios\IRepositorioColunas.cs" />
-    <Compile Include="Interfaces\Repositorios\IRepositorioTabelas.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Servicos\ServicoTabela.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ScaffoldCode.Domain\ScaffoldCode.Domain.csproj">
+      <Project>{990ae947-e648-4f87-a842-28d17b847f47}</Project>
+      <Name>ScaffoldCode.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ScaffoldCode.Infra.CrossCutting.IoC\ScaffoldCode.Infra.CrossCutting.IoC.csproj">
+      <Project>{1e4512bf-7c30-457f-8c7d-ec9795f11a62}</Project>
+      <Name>ScaffoldCode.Infra.CrossCutting.IoC</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ScaffoldCode.Infra.Helpers\ScaffoldCode.Infra.Helpers.csproj">
-      <Project>{98CF9D98-59CF-4CAF-BABC-72B634B1554D}</Project>
+      <Project>{98cf9d98-59cf-4caf-babc-72b634b1554d}</Project>
       <Name>ScaffoldCode.Infra.Helpers</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ScaffoldCodeInfra.Data.Dapper\ScaffoldCode.Infra.Data.Dapper.csproj">
+      <Project>{f0ca7434-5f04-490e-b202-88cbf029d51f}</Project>
+      <Name>ScaffoldCode.Infra.Data.Dapper</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

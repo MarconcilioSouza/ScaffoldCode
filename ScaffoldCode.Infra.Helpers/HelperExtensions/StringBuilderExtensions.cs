@@ -2,7 +2,7 @@
 
 namespace ScaffoldCode.Infra.Helpers.HelperExtensions
 {
-    public static class StringBuilderExtensions
+    public static class BuilderExtensions
     {
         // So para Append ficar alinhado com AppendLine !!
         public static StringBuilder ApLine(this StringBuilder sb)

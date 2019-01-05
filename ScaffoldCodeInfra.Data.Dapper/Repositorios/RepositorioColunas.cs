@@ -8,12 +8,12 @@ namespace ScaffoldCode.Infra.Data.Dapper
 {
     public class RepositorioColunas : RepositorioBase, IRepositorioColunas
     {
-        public List<Colunas> ObterColunas(int idObjeto, int? idPKey)
+        public List<columns> ObterColunas(int idObjeto, int? idPKey)
         {
-            using (var cnn = GetConnection())
+            using (var cnn = GetConnection)
             {
                 cnn.Open();
-                var result = cnn.Query<Colunas>(
+                var result = cnn.Query<columns>(
                     @"SELECT	SC.column_id as IdColuna, 
                                 SC.name as NomeCampo, 
                                 SC.max_length as Tamanho, 

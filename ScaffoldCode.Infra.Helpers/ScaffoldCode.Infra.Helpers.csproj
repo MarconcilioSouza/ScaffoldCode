@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="HelperExtensions\StringBuilderExtensions.cs" />
     <Compile Include="HelperExtensions\StringExtensions.cs" />
+    <Compile Include="Helpers\SqlBuilder.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
